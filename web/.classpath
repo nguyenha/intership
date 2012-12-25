@@ -13,9 +13,9 @@
   <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar" sourcepath="M2_REPO/javax/activation/activation/1.1/activation-1.1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" sourcepath="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar" sourcepath="M2_REPO/junit/junit/4.8.2/junit-4.8.2-sources.jar"/>
-  <classpathentry kind="src" path="/core"/>
+  <classpathentry kind="var" path="M2_REPO/com/home/qh/core/1.0/core-1.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" sourcepath="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
@@ -49,23 +49,19 @@
   <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-envers/3.6.8.Final/hibernate-envers-3.6.8.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-envers/3.6.8.Final/hibernate-envers-3.6.8.Final-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-core/3.0.1/tiles-core-3.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-core/3.0.1/tiles-core-3.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-api/3.0.1/tiles-api-3.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-api/3.0.1/tiles-api-3.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-request-api/1.0.1/tiles-request-api-1.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-request-api/1.0.1/tiles-request-api-1.0.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-servlet/2.1.4/tiles-servlet-2.1.4.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-servlet/2.1.4/tiles-servlet-2.1.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-digester/commons-digester/1.7/commons-digester-1.7.jar" sourcepath="M2_REPO/commons-digester/commons-digester/1.7/commons-digester-1.7-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.5.10/jcl-over-slf4j-1.5.10.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.5.10/jcl-over-slf4j-1.5.10-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-jsp/3.0.1/tiles-jsp-3.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-jsp/3.0.1/tiles-jsp-3.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-servlet/3.0.1/tiles-servlet-3.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-servlet/3.0.1/tiles-servlet-3.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-request-servlet/1.0.1/tiles-request-servlet-1.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-request-servlet/1.0.1/tiles-request-servlet-1.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-template/3.0.1/tiles-template-3.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-template/3.0.1/tiles-template-3.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-autotag-core-runtime/1.1.0/tiles-autotag-core-runtime-1.1.0.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-autotag-core-runtime/1.1.0/tiles-autotag-core-runtime-1.1.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-request-jsp/1.0.1/tiles-request-jsp-1.0.1.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-request-jsp/1.0.1/tiles-request-jsp-1.0.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar" sourcepath="M2_REPO/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15.jar" sourcepath="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/compass-project/compass/2.2.0/compass-2.2.0.jar" sourcepath="M2_REPO/org/compass-project/compass/2.2.0/compass-2.2.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/2.4.1/lucene-core-2.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-core/2.4.1/lucene-core-2.4.1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.4/commons-lang-2.4.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/data/spring-data-jpa/1.0.3.RELEASE/spring-data-jpa-1.0.3.RELEASE.jar" sourcepath="M2_REPO/org/springframework/data/spring-data-jpa/1.0.3.RELEASE/spring-data-jpa-1.0.3.RELEASE-sources.jar"/>
