@@ -1,0 +1,116 @@
+@import "nav-horizontal.css";
+div#content {
+    margin: 0 auto 20px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 800px;
+}
+div#main {
+    display: inline;
+    float: left;
+    width: 600px;
+}
+div#sub {
+    display: inline;
+    float: right;
+    width: 120px;
+}
+div#sub ul#local {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+div#nav {
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: -25px;
+    width: 100%;
+}
+div#left-side {
+    background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 100%, rgba(161,219,255,1) 100%);
+    border: 1px solid #89D3EE;
+    border-radius: 8px 8px 8px 8px;
+    display: inline;
+    float: left;
+    padding: 0;
+    vertical-align: top;
+    width: 140px;
+}
+div#right-side {
+    display: inline;
+    float: right;
+    width: 650px;
+}
+div#right-side div#right-main {
+    display: inline;
+    float: left;
+    width: 485px;
+}
+div#right-side div#right-sub {
+    display: inline;
+    float: right;
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid #89D3EE;
+    background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 100%, rgba(161,219,255,1) 100%);
+}
+div#right-side div#right-sub ul#local {
+    margin: 0 0 0 19px;
+    padding: 0;
+}
+div#left-side ul#local {
+    list-style: none outside none;
+    padding: 0;
+}
+div#left-side h2 {
+    background: -moz-linear-gradient(center top , #EBF1F6 0%, #ABD3EE 50%, #89C3EB 51%, #D5EBFB 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #077FBC;
+    border-radius: 8px 8px 8px 8px;
+    color: #077FBC;
+    text-align: center;
+}
+div#left-side ul#local li:hover {
+    background: -moz-linear-gradient(center top , #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%) repeat scroll 0 0 transparent;
+    border-radius: 8px 8px 8px 8px;
+    color: white;
+}
+div#left-side ul#local li {
+    font-size: 1.2em;
+    font-weight: normal;
+    height: 100%;
+    margin-left: 0;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-top: 6px;
+}
+div#right-side div#right-sub h2 {
+    text-align: center;
+    background: -moz-linear-gradient(center top , #EBF1F6 0%, #ABD3EE 50%, #89C3EB 51%, #D5EBFB 100%) repeat scroll 0 0 transparent;
+    border-radius: 8px;
+    border: 1px solid #077FBC;
+    color: #077FBC;
+}
+div#right-side div#right-sub ul#local li {
+    font-size: 1.2em;
+    font-weight: normal;
+    height: 100%;
+    margin-left: -20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 25px;
+}
+div#right-side div#right-sub ul#local {
+    list-style: none;
+    padding: 0px;
+}
+div#right-side div#right-sub ul#local li:hover {
+    border-radius: 8px;
+    background: -moz-linear-gradient(center top , #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%) repeat scroll 0 0 transparent;
+}
+div#right-main {
+    padding-left: 5px;
+    border-radius: 8px;
+    background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 100%, rgba(161,219,255,1) 100%);
+    border: 1px solid #D7F0FF;
+}

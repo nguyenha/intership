@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+    	<Menu name="GuessMenu" title="menu.guess" page="/guessMenu.html" roles="ROLE_ADMIN,ROLE_USER"/>
+    	<Menu name="LeftSidebar" title="guessMenu.leftSidebar" page="/guessMenu.html" roles="ROLE_ADMIN,ROLE_USER">
+    		<Item name="ViewVessels" title="menu.admin.viewVessels" page="/admin/vesselList.html"/>
+            <Item name="ViewVoyages" title="menu.admin.viewVoyages" page="/admin/voyage_list.html"/>
+    	</Menu>    	
+    	<Menu name="RightSidebar" title="guessMenu.rightSidebar" page="/guessMenu.html" roles="ROLE_ADMIN,ROLE_USER">
+    		<Item name="ViewVessels" title="menu.admin.viewVessels" page="/admin/vesselList.html"/>
+            <Item name="ViewVoyages" title="menu.admin.viewVoyages" page="/admin/voyage_list.html"/>
+            <Item name="ViewCountries" title="menu.admin.viewCountries" page="/admin/countryList.html"/>
+            <Item name="ViewCities" title="menu.admin.viewCities" page="/admin/cityList.html"/>
+    	</Menu>    	
+        <Menu name="MainMenu" title="mainMenu.title" page="/mainMenu.html" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="UserMenu" title="menu.user" description="User Menu" page="/userform.html" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="BookingMenu" title="menu.Booking" description="ENS Menu" roles="ROLE_ADMIN,ROLE_USER" page="/admin/users.html">
+            <Item name="ViewEnsDatas" title="menu.Booking.ensDataList" page="/booking/ensDataList.html"/>
+            <Item name="ViewBooking" title="menu.Booking.Booking" page="/booking/view_booking.html"/>
+        </Menu>
+	  <Menu name="CodesMenu" title="menu.codes" description="Codes" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewCodeTypes" title="menu.admin.viewCodeTypes" page="/admin/codeTypeList.html"/>
+           	<Item name="ViewCodes" title="menu.admin.viewCodes" page="/admin/codesList.html"/>
+	  </Menu>	
+	  <Menu name="PlaceMenu" title="menu.place" description="Place" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+			<Item name="ViewCountries" title="menu.admin.viewCountries" page="/admin/countryList.html"/>
+           	<Item name="ViewCities" title="menu.admin.viewCities" page="/admin/cityList.html"/>
+           	<Item name="ViewPorts" title="menu.admin.viewPorts" page="/admin/portList.html"/>
+           	<Item name="ViewStores" title="menu.admin.viewStores" page="/admin/storeList.html"/>
+			<Item name="ViewRegions" title="menu.admin.viewRegions" page="/admin/regionList.html"/>
+	  </Menu>
+	  <Menu name="CustomerMenu" title="menu.customer" description="Customer" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+           <Item name="ViewPartners" title="menu.admin.viewPartners" page="/admin/partnerList.html"/>
+	  </Menu>
+	  <Menu name="CurrencyMenu" title="menu.currency" description="Currency" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewCurrencies" title="menu.admin.viewCurrencies" page="/admin/currencyList.html"/>
+		<Item name="ViewExchangeRates" title="menu.admin.viewExchangeRates" page="/admin/exchangeRateList.html"/>
+	  </Menu>	
+	  <Menu name="CommodityMenu" title="menu.commodity" description="Commodity" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewCommodityTypes" title="menu.admin.viewCommodityTypes" page="/admin/commodityTypeList.html"/>
+           	<Item name="ViewCommodities" title="menu.admin.viewCommodities" page="/admin/commodityList.html"/>           
+	  </Menu>
+	  <Menu name="EquipmentMenu" title="menu.equipment" description="Equipment" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+			<Item name="ViewEquipmentTypes" title="menu.admin.viewEquipmentTypes" page="/admin/equipmentTypeList.html"/>
+           	<Item name="ViewEquipments" title="menu.admin.viewEquipments" page="/admin/equipmentList.html"/>	  
+	  </Menu>
+	  <Menu name="PayingMenu" title="menu.paying" description="Paying" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewPayings" title="menu.admin.viewPayings" page="/admin/payingList.html"/>                      
+         	<Item name="ViewFees" title="menu.admin.viewFees" page="/admin/feeList.html"/>
+	  </Menu>
+	  
+	  <Menu name="ParammeterMenu" title="menu.parammeter" description="Parammeter" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewClauses" title="menu.admin.viewClauses" page="/admin/clauseList.html"/>                      
+         	<Item name="ViewCtrKindPackages" title="menu.admin.viewCtrKindPackages" page="/admin/ctrKindPackageList.html"/>
+         	<Item name="ViewKindPackages" title="menu.admin.viewKindPackages" page="/admin/kindPackageList.html"/>                      
+         	<Item name="ViewNos" title="menu.admin.viewNos" page="/admin/nosList.html"/>
+         	<Item name="ViewSystemParams" title="menu.admin.viewSystemParams" page="/admin/systemParameterList.html"/>                      
+         	<Item name="ViewTransKindTypes" title="menu.admin.viewTransKindTypes" page="/admin/transCtrTypeList.html"/>
+         	<Item name="ViewGoodsStatus" title="menu.admin.viewGoodsStatus" page="/admin/goodsStatusList.html"/>
+	  </Menu>
+
+	  <Menu name="VoyageMenu" title="menu.voyage" description="Voyage" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+ 		<Item name="ViewVessels" title="menu.admin.viewVessels" page="/admin/vesselList.html"/>
+           	<Item name="ViewVoyages" title="menu.admin.viewVoyages" page="/admin/voyage_list.html"/>
+	  </Menu>
+	  <Menu name="AccountMenu" title="menu.account" description="Account" roles="ROLE_ADMIN" width="120" page="/admin/users.html">
+		<Item name="ViewUsers" title="menu.admin.users" page="/admin/users.html"/>
+		<Item name="ActiveUsers" title="mainMenu.activeUsers" page="/admin/activeUsers.html"/>
+	  </Menu>        
+	  <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN" width="120" page="/admin/users.html">                      
+           <Item name="ReloadContext" title="menu.admin.reload" page="/admin/reload.html"/>
+           <Item name="FileUpload" title="menu.selectFile" page="/fileupload.html"/>
+      </Menu>       
+       <Menu name="Logout" title="user.logout" page="/logout.jsp" roles="ROLE_ADMIN,ROLE_USER"/>
+    </Menus>
+</MenuConfig>
