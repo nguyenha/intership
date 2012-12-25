@@ -45,7 +45,7 @@ import java.util.Set;
 @Table(name = "app_user")
 @Searchable
 @Audited
-public class User extends BaseObject implements Serializable, UserDetails {
+public class IntershipUser extends BaseObject implements Serializable, UserDetails {
     private static final long serialVersionUID = 3832626162173359411L;
 
     private Long id;
@@ -70,7 +70,7 @@ public class User extends BaseObject implements Serializable, UserDetails {
     /**
      * Default constructor - creates a new instance with no values set.
      */
-    public User() {
+    public IntershipUser() {
     }
 
     /**
@@ -78,7 +78,7 @@ public class User extends BaseObject implements Serializable, UserDetails {
      *
      * @param username login name for user.
      */
-    public User(final String username) {
+    public IntershipUser(final String username) {
         this.username = username;
     }
 
@@ -342,11 +342,11 @@ public class User extends BaseObject implements Serializable, UserDetails {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof User)) {
+        if (!(o instanceof IntershipUser)) {
             return false;
         }
 
-        final User user = (User) o;
+        final IntershipUser user = (IntershipUser) o;
 
         return !(username != null ? !username.equals(user.getUsername()) : user.getUsername() != null);
 

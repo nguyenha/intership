@@ -361,17 +361,17 @@
 					<target>${java-version}</target>
 				</configuration>
 			</plugin>
-			<plugin>
+ <!-- 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
 					<warName>intership</warName> 
-					<ignoreWebxml>false</ignoreWebxml>
+ 					<ignoreWebxml>false</ignoreWebxml>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
+ 				</configuration>
 			</plugin>
-			<plugin>
+ --> 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
