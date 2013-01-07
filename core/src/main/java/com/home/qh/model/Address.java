@@ -47,8 +47,8 @@ public class Address extends BaseObject implements Serializable {
     private String country;
     private String postalCode;
     private String remarks;
-//    private AddressType addType;
-//    private Customer customer;
+    private AddressType addType;
+    private Customer customer;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -99,32 +99,32 @@ public class Address extends BaseObject implements Serializable {
 		return name;
 	}
 
-//    @ManyToOne
-//    @JoinColumn(name="address_type")
-//	public AddressType getAddType() {
-//		return addType;
-//	}
+    @ManyToOne
+    @JoinColumn(name="addressType_id")
+	public AddressType getAddType() {
+		return addType;
+	}
     
-//    @ManyToOne
-//	public Customer getCustomer() {
-//		return customer;
-//	}
+    @ManyToOne
+	public Customer getCustomer() {
+		return customer;
+	}
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-//	public void setCustomer(Customer customer) {
-//		this.customer = customer;
-//	}
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-//	public void setAddType(AddressType addType) {
-//		this.addType = addType;
-//	}
+	public void setAddType(AddressType addType) {
+		this.addType = addType;
+	}
 
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;

@@ -1,18 +1,40 @@
 package com.home.qh.model;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 import org.compass.annotations.Searchable;
+import org.compass.annotations.SearchableId;
 import org.compass.annotations.SearchableProperty;
 
 @Embeddable
 @Searchable(root = false)
 public class AddressType extends BaseObject implements Serializable {
+	private Long id;
 	private String code;
 	private String name;
+	private Set<Address>addresses;
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SearchableId
+    public Long getId() {
+        return id;
+    }
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
     @Column(length=20)
     @SearchableProperty
@@ -33,11 +55,19 @@ public class AddressType extends BaseObject implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
+	@OneToMany(fetch = FetchType.EAGER)
+	public Set<Address> getAddresses() {
+		return addresses;
+	}
+	
+	public void setAddresses(Set<Address> addresses) {
+		this.addresses = addresses;
+	}
+	
 	@Override
 	public String toString() {
-        final StringBuilder sb = new StringBuilder();
-        sb.append("AddressType");
+		ToStringBuilder sb = new ToStringBuilder(this, ToStringStyle.DEFAULT_STYLE);
         sb.append("{code = ").append((code != null) ? code : "").append('\n');
         sb.append("name = ").append((name != null) ? name : "");
         sb.append('}');

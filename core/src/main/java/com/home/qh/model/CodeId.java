@@ -18,7 +18,7 @@ public class CodeId implements Serializable {
     private String groupId;
     private String code;
     private static final long serialVersionUID = -8171654605396444321L;
-
+    
     @Column(length = 50)
     @Index(name="idx_ccode_groupId")
     public String getGroupId() {

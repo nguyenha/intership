@@ -41,7 +41,7 @@ public class Customer extends BaseObject implements Serializable {
     private Contact contact;
 //    private PurchaseInfo purchaseInfo;
     
-//    private Set<Address> addresses = new HashSet<Address>();
+    private Set<Address> addresses;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -82,16 +82,14 @@ public class Customer extends BaseObject implements Serializable {
 		this.joinDate = joinDate;
 	}
 	
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-//    @JoinColumn(name="cus_add")
-//    @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
-//	public Set<Address> getAddresses() {
-//		return addresses;
-//	}
-//
-//	public void setAddresses(Set<Address> addresses) {
-//		this.addresses = addresses;
-//	}
+	@OneToMany(fetch = FetchType.EAGER)   
+	public Set<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(Set<Address> addresses) {
+		this.addresses = addresses;
+	}
 
 	@Embedded
 	public Contact getContact() {

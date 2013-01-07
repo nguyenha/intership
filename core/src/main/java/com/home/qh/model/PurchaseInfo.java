@@ -16,13 +16,12 @@ import org.compass.annotations.Searchable;
 @Searchable(root = false)
 public class PurchaseInfo extends BaseObject implements Serializable {
     private static final Log log = LogFactory.getLog(CommonCode.class);
-    private static final long serialVersionUID = -1393312947037639590L;
-	
+    private static final long serialVersionUID = -1393312947037639590L;    
 	private CommonCode pricing;
 	private Double discount;
 	private CommonCode paymentTerm;
 	private String taxing;
-	
+		
 	/*
 	 * Currency
 	 */
