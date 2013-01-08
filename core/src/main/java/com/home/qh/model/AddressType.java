@@ -23,7 +23,7 @@ public class AddressType extends BaseObject implements Serializable {
 	private Long id;
 	private String code;
 	private String name;
-	private Set<Address>addresses;
+	
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -56,14 +56,6 @@ public class AddressType extends BaseObject implements Serializable {
 		this.name = name;
 	}
 	
-	@OneToMany(fetch = FetchType.EAGER)
-	public Set<Address> getAddresses() {
-		return addresses;
-	}
-	
-	public void setAddresses(Set<Address> addresses) {
-		this.addresses = addresses;
-	}
 	
 	@Override
 	public String toString() {

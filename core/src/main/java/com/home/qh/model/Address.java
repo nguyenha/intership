@@ -46,8 +46,7 @@ public class Address extends BaseObject implements Serializable {
     private String province;
     private String country;
     private String postalCode;
-    private String remarks;
-    private AddressType addType;
+    private String remarks;   
     private Customer customer;
     
     @Id
@@ -98,13 +97,7 @@ public class Address extends BaseObject implements Serializable {
 	public String getName() {
 		return name;
 	}
-
-    @ManyToOne
-    @JoinColumn(name="addressType_id")
-	public AddressType getAddType() {
-		return addType;
-	}
-    
+       
     @ManyToOne
 	public Customer getCustomer() {
 		return customer;
@@ -121,11 +114,7 @@ public class Address extends BaseObject implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public void setAddType(AddressType addType) {
-		this.addType = addType;
-	}
-
+	
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
