@@ -31,10 +31,11 @@
 <div class="cleaner"></div>
 
 <display:table name="listData" cellspacing="0" cellpadding="0" defaultsort="1" id="codeData" pagesize="2" class="listing-tbl" export="true">
-    <display:column property="code" sortable="true" escapeXml="true" titleKey="codesData.code" style="width: 30%" 
+    <display:column property="code" sortable="true" escapeXml="true" titleKey="codesData.code" style="width: 15%" 
     	url="/admin/editCode" paramId="id" paramProperty="id"/>
 	<display:column property="name" sortable="true" titleKey="codesData.name" style="width: 30%"/>
-	<display:column property="codeType.name" sortable="true" titleKey="codesData.codeType" style="width: 30%"/>
+	<display:column property="codeType.name" sortable="true" titleKey="codesData.codeType" style="width: 15%"/>
+	<display:column property="description" sortable="true" titleKey="codeTypeData.description" style="width: 40%"/>
     
     <display:setProperty name="paging.banner.item_name" value="codeData"/>
     <display:setProperty name="paging.banner.items_name" value="codeList"/>

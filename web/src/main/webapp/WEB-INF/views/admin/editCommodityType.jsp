@@ -1,33 +1,33 @@
 <%@ include file="/common/taglibs.jsp"%>
 
 <head>
-    <title><fmt:message key="codeTypeForm.title"/></title>
-    <meta name="heading" content="<fmt:message key='codeTypeForm.heading'/>"/>
+    <title><fmt:message key="commodityTypeForm.title"/></title>
+    <meta name="heading" content="<fmt:message key='commodityTypeForm.heading'/>"/>
     <meta name="menu" content="AdminMenu"/>
 </head>
-<%-- commandName="codeType" --%>
-<form:form modelAttribute="editData" method="post" action="${ctx }/admin/editCodeType" id="codeTypeForm">
+<%-- commandName="commodityType" --%>
+<form:form modelAttribute="editData" method="post" action="${ctx }/admin/editCommodityType" id="commodityTypeForm">
 	<form:hidden path="id" />
 	<form:errors path="*" />
 	<table>
 		<tr>
-			<td><fmt:message key="codeTypeData.code" /></td>
+			<td><fmt:message key="commodityTypeData.code" /></td>
 			<td> 
 				<form:input path="code" id="countryCode" cssClass="text large" cssErrorClass="text large error" />
 				<form:errors path="code" cssClass="fieldError" />
 			</td>
 		</tr>
 		<tr>
-			<td><fmt:message key="codeTypeData.name" /></td>
+			<td><fmt:message key="commodityTypeData.name" /></td>
 			<td> 
-				<form:input path="name" id="codeTypeName" cssClass="text large" cssErrorClass="text large error" />
+				<form:input path="name" id="commodityTypeName" cssClass="text large" cssErrorClass="text large error" />
 				<form:errors path="name" cssClass="fieldError" />
 			</td>
 		</tr>
 		<tr>
-			<td><fmt:message key="codeTypeData.description" /></td>
+			<td><fmt:message key="commodityTypeData.description" /></td>
 			<td> 
-				<form:textarea path="description" id="codeTypeDescription" cssClass="text large" cssErrorClass="text large error" />
+				<form:textarea path="description" id="commodityTypeDataDescription" cssClass="text large" cssErrorClass="text large error" />
 				<form:errors path="description" cssClass="fieldError" />
 			</td>
 		</tr>

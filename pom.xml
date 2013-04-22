@@ -340,7 +340,7 @@
 					<username>tomcat7</username>
 					<password>tomcat7</password>
 					<server>localhost</server>
-					<url>http://localhost:8080/manager/html</url>
+					<url>http://localhost:8080/manager/text</url>
 				</configuration>
 				<executions>
 					<execution>

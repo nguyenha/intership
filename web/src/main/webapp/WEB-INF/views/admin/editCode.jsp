@@ -33,7 +33,7 @@
 		<tr>
 			<td><fmt:message key="codesData.desc" /></td>
 			<td> 
-				<form:input path="description" cssClass="text large" cssErrorClass="text large error" />
+				<form:textarea path="description" cssClass="text large" cssErrorClass="text large error" />
 				<form:errors path="description" cssClass="fieldError" />
 			</td>
 		</tr>
